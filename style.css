@@ -1,0 +1,135 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Variables */
+:root{
+
+}
+
+/* Navigation Bar */
+#navbar{
+    position:relative;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+#navbar ul li a{
+    padding: 29px auto;
+    margin-left: 55px;
+    color: black;
+    font-size: 19px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    cursor: pointer;
+    color: orangered;
+}
+#firstnav{
+    margin-left: 3.3cm;
+}
+
+#navbar ul {
+    font-size: 13px;
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li select{
+    font-size: 17px;
+    cursor: pointer;
+    text-align-last: center;
+    width: 200px;
+}
+#navbar ul li select:hover{
+    color: orangered;
+}
+#navbar ul li option{
+    color: orangered;
+}
+/* Logo */
+nav div a img{
+    -webkit-clip-path: polygon(50% 0%, 80% 11%, 88% 40%, 76% 74%, 54% 100%, 45% 100%, 19% 64%, 15% 42%, 18% 15%);
+    clip-path: polygon(50% 0%, 80% 11%, 88% 40%, 76% 74%, 54% 100%, 45% 100%, 19% 64%, 15% 42%, 18% 15%);
+    
+    transition: all 0.7s;
+    width: 40%;
+    margin-left: 30px;
+}
+img.photo_sec:hover{
+    transform:scale(1.109)
+}
+#photo_sec{
+    display: grid;
+    grid-template-areas: 
+    'pizza veggies best';
+    height: 20rem;
+    align-items: center;
+    justify-content: center;
+    background-color:#171a29;
+}
+#photo_sec::after{
+    content: "";
+    background: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png') no-repeat center center/cover;
+    top: 400px;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -11;
+}
+.photo_sec{
+    transition: all 1s;
+    margin: auto 75px;
+}
+.photo_sec:hover, .serv_photo:hover{
+    transform: scale(1.1);
+}
+#services_head{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 4cm;
+    color: white;
+}
+#services{
+    margin-top: 20px;
+    height: 9cm;
+    display: flex;
+    justify-content: top;
+    align-items: top;
+    background-color: #fff;
+}
+#services a{
+    margin: 5px auto;
+    text-decoration: none;
+}
+#services a img{
+    transition: all 0.8s;
+    margin-top: 15px;
+}
+.serv_links{
+    font-size: 25px;
+    text-align: center;
+    color: #171a29;
+    margin: 15px auto;
+    transition: all 0.5s;
+}
+.serv_links:hover{
+    transform: scale(1.1);
+    color: orangered;
+}
+
+
+#client_section::after{
+    content: "";
+    background: url('img/Background3.png') no-repeat center center/cover;
+    top: 26cm;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -11;
+}

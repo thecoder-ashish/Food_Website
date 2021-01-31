@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('img/Login.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+#container{
+    border: 3px solid red;
+    color: rgb(255, 113, 47);
+    position: absolute;
+    top: 37%;
+    left: 40%;
+    width: 14cm;
+    height: 7cm;
+}
+#container h1{
+    font-size: 45px;
+    margin-bottom: 15px;
+}
